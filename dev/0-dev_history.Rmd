@@ -23,13 +23,22 @@ usethis::use_git_ignore("renv/staging")
 # renv::install("ggplot2")
 renv::install("ggplot2@3.3.5")
 renv::install("usethis")
+renv::install("berkosarFIND/findsamplesize")
 ```
 
 
 
 # Snapshot when you're good with versions
 
+- Each time you do some modifications
+- Each time before sending to git server
 ```{r}
 renv::snapshot()
+```
+
+# After each pull, you need restore
+
+```{r}
+renv::restore()
 ```
 

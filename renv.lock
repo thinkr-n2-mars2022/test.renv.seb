@@ -127,6 +127,19 @@
       "Hash": "77bd60a6157420d4ffa93b27cf6a58b8",
       "Requirements": []
     },
+    "findsamplesize": {
+      "Package": "findsamplesize",
+      "Version": "0.0.0.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "berkosarFIND",
+      "RemoteRepo": "findsamplesize",
+      "RemoteRef": "master",
+      "RemoteSha": "c32cc390e35515d4185d7f204e10cb897da310c8",
+      "Hash": "a804a8ac8d3cc37b8fbd3e6ba8a6c035",
+      "Requirements": []
+    },
     "ggplot2": {
       "Package": "ggplot2",
       "Version": "3.3.5",
