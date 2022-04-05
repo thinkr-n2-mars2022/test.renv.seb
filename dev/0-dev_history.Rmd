@@ -1,0 +1,35 @@
+---
+title: "dev_history"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+# Init {renv} - only the first time by the first dev
+
+```{r}
+usethis::use_git()
+renv::init()
+
+# Hide some directories from git
+usethis::use_git_ignore("renv/library")
+usethis::use_git_ignore("renv/staging")
+```
+
+# Install my packages - only once
+
+```{r}
+# install.packages("ggplot2")
+# renv::install("ggplot2")
+renv::install("ggplot2@3.3.5")
+renv::install("usethis")
+```
+
+
+
+# Snapshot when you're good with versions
+
+```{r}
+renv::snapshot()
+```
+
